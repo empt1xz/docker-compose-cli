@@ -156,7 +156,24 @@ Entre na pasta:
 cd emptyxz-docker
 ```
 
-Compile o Rust:
+Caso você seja usuário linux:
+
+```bash
+sudo dnf install mingw64-gcc (FEDORA)
+sudo apt install gcc-mingw-w64-x86-64 (UBUNTU/DEBIAN)
+```
+
+```bash
+rustup target add x86_64-pc-windows-gnu
+```
+
+Compile o Rust no Linux:
+
+```bash
+cargo build --release --target x86_64-pc-windows-gnu
+```
+
+Compile o Rust no Windows:
 
 ```bash
 cargo build --release

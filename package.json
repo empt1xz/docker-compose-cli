@@ -1,0 +1,19 @@
+{
+  "name": "emptyxz-docker",
+  "version": "1.0.0",
+  "description": "Gerador de docker-compose.yml para PostgreSQL, MySQL e MongoDB",
+  "bin": {
+    "emptyxz-docker": "bin/index.js"
+  },
+  "files": [
+    "bin",
+    "binaries"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["docker", "docker-compose", "cli", "generator"],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
