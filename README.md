@@ -1,33 +1,27 @@
-# 🐳 emptyxz-docker
+<h1 style="font-size: 48px"> 🐳 <b>emptyxz-docker</b> </h1>
 
-> Gere arquivos `docker-compose.yml` para bancos de dados em poucos segundos.
+> Generate `docker-compose.yml` files for databases in seconds.
 
 <div align="center">
-
-![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge\&logo=rust\&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge\&logo=docker\&logoColor=white)
-![NPM](https://img.shields.io/badge/NPM-CB3837?style=for-the-badge\&logo=npm\&logoColor=white)
-![Licença](https://img.shields.io/badge/Licença-MIT-red?style=for-the-badge)
 
 </div>
 
 ---
 
-## 📌 Sobre
+### 📌 About
 
-O **emptyxz-docker** é uma CLI desenvolvida em **Rust** para gerar configurações do Docker Compose de forma interativa.
+##### **emptyxz-docker** is a CLI built with **Rust** that interactively generates Docker Compose configurations.
+###### You pick the database, enter the details, and the `docker-compose.yml` file is created automatically.
+---
+### ⚡ **Usage**
 
-Você escolhe o banco, informa os dados e o arquivo `docker-compose.yml` é criado automaticamente.
-
-## ⚡ Uso
-
-Não precisa instalar globalmente.
+#### No global installation required.
 
 ```bash
 npx emptyxz-docker create
 ```
 
-Depois, escolha:
+#### Then choose:
 
 ```text
 🐳 Docker Compose Generator
@@ -36,27 +30,27 @@ Depois, escolha:
 2. MySQL
 3. MongoDB
 
-Escolha o banco:
+Choose the database:
 ```
 
-Informe:
+#### Enter:
 
-* Nome do banco
-* Usuário
-* Senha
-* Porta
+* Database name
+* User
+* Password
+* Port
 
-E pronto.
+#### And you're done.
 
 ```text
-docker-compose.yml criado com sucesso!
+docker-compose.yml created successfully!
 ```
 
 ---
 
-## 🗄️ Bancos suportados
+### 🗄️ *Supported databases*
 
-### PostgreSQL
+### **PostgreSQL**
 
 ```yaml
 services:
@@ -77,7 +71,7 @@ volumes:
   postgres_data:
 ```
 
-### MySQL
+### **MySQL**
 
 ```yaml
 services:
@@ -96,7 +90,7 @@ services:
       - mysql_data:/var/lib/mysql
 ```
 
-### MongoDB
+### **MongoDB**
 
 ```yaml
 services:
@@ -114,21 +108,19 @@ services:
       - mongo_data:/data/db
 ```
 
----
+## 🛠️ Technologies
 
-## 🛠️ Tecnologias
+* 🦀 [Rust](https://rust-lang.org/)
+- 🟢 [Node.js](https://nodejs.org/)
+* 📦 [NPM / NPX](https://npmjs.com/)
+- 🐳 [Docker](https://www.docker.com/)
+* 📄 [Docker Compose](https://docs.docker.com/compose/)
 
-* 🦀 Rust
-* 🟢 Node.js
-* 📦 NPM / NPX
-* 🐳 Docker
-* 📄 Docker Compose
-
-O Rust é responsável pela CLI e geração do arquivo. O Node.js funciona como uma camada para distribuição através do NPM/NPX.
+###### *Rust* handles the *CLI* and file generation. *Node.js* acts as a layer for distribution through *NPM/NPX*.
 
 ---
 
-## 📂 Estrutura
+### 📂 **Structure**
 
 ```text
 emptyxz-docker/
@@ -142,55 +134,46 @@ emptyxz-docker/
 
 ---
 
-## 🚀 Desenvolvimento
+### 🚀 **Development**
 
-Clone o projeto:
+### **Step 1** - Clone the project:
 
 ```bash
 git clone https://github.com/empt1xz/emptyxz-docker.git
 ```
 
-Entre na pasta:
+### **Step 2** - Enter the folder:
 
 ```bash
 cd emptyxz-docker
 ```
 
-Compile o Rust:
+### **Step 3** - Build the Rust binary:
 
 ```bash
 cargo build --release
 ```
 
-Teste:
+### **Step 4** - Test it:
 
 ```bash
 node bin/docker.js create
 ```
 
----
+<div align="center">
 
-## 🗺️ Próximos passos
+### Made with 🦀 by **emptyxz**
 
-* [x] PostgreSQL
-* [x] MySQL
-* [x] MongoDB
-* [x] Portas personalizadas
-* [x] Credenciais personalizadas
-* [x] Volumes persistentes
-* [x] CLI em Rust
-* [x] Distribuição via NPX
+</div>
 
----
-
-## 📄 Licença
-
-Este projeto está sob a licença **MIT**.
-
----
+<br>
 
 <div align="center">
 
-Feito com 🦀 Rust por **emptyxz**
+![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge\&logo=rust\&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge\&logo=docker\&logoColor=white)
+![NPM](https://img.shields.io/badge/NPM-CB3837?style=for-the-badge\&logo=npm\&logoColor=white)
+
+![License](https://img.shields.io/badge/License-MIT-red?style=for-the-badge)
 
 </div>
